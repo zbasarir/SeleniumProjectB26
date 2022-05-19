@@ -19,10 +19,11 @@ public class Task1_YahooTitleVerification {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("htpps://www.yahoo.com");
+        driver.get("https://www.yahoo.com");
 
         // actual title comes from selenium
         String actualTitle = driver.getTitle();
+        System.out.println("Actual title of Yahoo: " + actualTitle);
 
         // expected title comes from requirement
         String expectedTitle = "Yahoo";
